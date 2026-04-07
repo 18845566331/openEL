@@ -1,0 +1,32 @@
+name: Bug Report
+description: Create a report to help us improve the system
+title: "[Bug] "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您抽出宝贵的时间向我们报告问题。这可以帮助系统运行得更好！
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug 描述
+      description: 请详细描述该 Bug 是什么样的。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现步骤
+      description: 我们该如何触发这个问题？
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 系统环境
+      description: 比如你的操作系统信息、Python版本、Flutter版本。
+    validations:
+      required: true

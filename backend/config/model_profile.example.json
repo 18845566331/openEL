@@ -1,0 +1,30 @@
+{
+  "_说明": "EL光伏组件缺陷检测模型配置文件示例。复制此文件并修改参数后使用。",
+  "_参数说明": {
+    "model_path": "ONNX模型文件的绝对路径或相对路径",
+    "labels": "缺陷类别标签列表，顺序需与模型训练时一致",
+    "input_width": "模型输入图像宽度（像素），常见值: 640",
+    "input_height": "模型输入图像高度（像素），常见值: 640",
+    "output_layout": "模型输出布局格式，可选: cxcywh_obj_cls | xyxy_score_class | cxcywh_score_class",
+    "normalize": "是否将像素值归一化到[0,1]范围（除以255）",
+    "swap_rb": "是否交换颜色通道（BGR转RGB）",
+    "confidence_threshold": "置信度阈值（0.0-1.0），低于此值的检测结果将被过滤",
+    "iou_threshold": "IOU阈值（0.0-1.0），用于NMS非极大值抑制去除重叠框",
+    "backend_preference": "推理引擎偏好，可选: onnxruntime | opencv"
+  },
+  "model_path": "D:/models/el_defect_model.onnx",
+  "labels": [
+    "隐裂",
+    "断栅",
+    "黑斑",
+    "烧结异常"
+  ],
+  "input_width": 640,
+  "input_height": 640,
+  "output_layout": "cxcywh_obj_cls",
+  "normalize": true,
+  "swap_rb": true,
+  "confidence_threshold": 0.55,
+  "iou_threshold": 0.45,
+  "backend_preference": "onnxruntime"
+}

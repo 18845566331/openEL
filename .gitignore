@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+*.egg
+
+# Flutter
+frontend/.dart_tool/
+frontend/.packages
+frontend/build/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+frontend/.metadata
+frontend/pubspec.lock
+flutter/
+
+
+# Build artifacts
+backend/dist/
+backend/build/
+backend/*.spec
+*.exe
+
+# Environment & secrets
+.env
+.env.*
+backend/.env
+backend/.api_token
+
+# Model files & cache
+backend/model_cache/
+*.onnx
+*.pt
+*.pth
+
+# IDE & editor
+.cursorrules
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Runtime
+logs/
+outputs/
+*.log
+
+# Test artifacts & debug files
+backend/mock_test.docx
+backend/test_lxml.docx
+backend/test_parts.docx
+backend/*.png
+*.txt.bak
+backend/diagnose_result.txt
+backend/export_debug.txt
+backend/main_structure.txt
+crash_test.log
+backend_error.log
+dummy.onnx
+
+# Temporary debug/fix scripts
+backend/fix_*.py
+backend/re_fix_*.py
+backend/temp_fix.py
+backend/diag_patch.py
+backend/analyze.py
+backend/debug_export.py
+backend/extract_export.py
+backend/compare_schema.py
+backend/refactor.py
+
+# OS generated
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Frontend test scripts
+frontend/test_dir.dart
+frontend/test_exif.dart
+frontend/flutter_*.log
