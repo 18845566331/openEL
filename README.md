@@ -1,5 +1,28 @@
 # EL/光伏组件缺陷检测系统 (开源版)
 
+[English](./README_EN.md) | [简体中文](./README.md)
+
+<p align="center">
+  <img src="https://img.shields.io/badge/license-GPLv3-blue.svg" alt="License">
+  <img src="https://img.shields.io/badge/Flutter-3.24+-02569B?logo=flutter" alt="Flutter">
+  <img src="https://img.shields.io/badge/FastAPI-0.100+-009688?logo=fastapi" alt="FastAPI">
+  <img src="https://img.shields.io/badge/ONNX_Runtime-1.15+-blue?logo=onnx" alt="ONNX Runtime">
+  <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Platform">
+</p>
+
+<p align="center">
+  <img src="./docs/images/workspace.png" alt="主工作台界面" width="800">
+  <br>
+  <em>基于 Flutter 的现代化暗黑极客风工作流，支持硬件加速、深缩放（Deep Zoom）与高帧率掩膜渲染。</em>
+</p>
+
+<p align="center">
+  <img src="./docs/images/settings.png" alt="参数配置面板" width="400">
+  <img src="./docs/images/history.png" alt="历史管理与导出界面" width="400">
+  <br>
+  <em>灵活的模型可热载、微调参数化面板（左）及项目级检验历史与多格式一键导出功能（右）。</em>
+</p>
+
 本项目是一个功能强大且完全开源（基于 **GNU GPLv3** 协议）的光伏组件缺陷检测系统。系统采用前后端分离架构，由基于 Flutter 的现代化跨平台桌面应用前端，以及基于 FastAPI + OpenCV + ONNX Runtime 的高性能本地化引擎后端构成，能够实现离线状态下高速、高精度的 AI 缺陷识别和报告生成服务。
 
 ## 🌟 核心功能特色
@@ -24,6 +47,10 @@
 ## 💻 运行与安装开发指南
 
 本指南主要面向 Windows 环境。你可以直接通过预编译好的包进行运行，或使用源码进行二次开发。
+
+<!-- TODO: 当你在 GitHub 发布了 Releases (例如软件打包的 .exe 或 .zip)，请更新此处的下载链接 -->
+> **📥 开箱即用版下载**
+> 如果你不熟悉开发环境配置，请直接访问 [Releases 发布页](https://github.com/你的用户名/你的项目名/releases) 下载最新的绿色免安装版本直接运行！
 
 ### 源码运行的基础环境准备
 1. **系统环境**: Windows 10/11 (64-bit)
